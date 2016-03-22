@@ -48,7 +48,7 @@ To run this code we then run `rackup config.ru`. If you're using an Integrated D
 [2015-11-27 16:48:22] INFO  WEBrick::HTTPServer#start: pid=11275 port=9292
 ```
 
-Notice it says `port=9292`. If you open your browser and go to `http://localhost:9292/` you should see `Hello, World`. In Nitrous, use the 'Preview' feature on port 9292. Congrats! You just made your first web app!
+Notice it says `port=9292`. If you open your browser and go to `http://localhost:9292/` you should see `Hello, World`. In Nitrous, use the 'Preview' feature on port 9292. If you are using Cloud9, run `rackup -p $PORT -o $IP config.ru`. Use the 'Preview button at the top. 'Congrats! You just made your first web app!
 
 Let's deconstruct this URL a little bit though. The URL is `http://localhost:9292/`. The protocol is `http`. That makes sense, but the domain is `localhost:9292`. What's going on there? `localhost` is normally where a server like `google.com` goes. In this case, since you are running the server on your computer, `localhost` is the server name of your own computer. Nobody else can get that URL though. That's good for right now. This allows you to play around with writing websites without the security concerns of opening it up to the entire web. The last part of that URL is the `:9292` section. This the "port number" of your server. Don't worry too much about this, but you may want to run multiple servers on one computer and having different ports allows them to be running simultaneously without conflicting. The resource that you are requesting is `/`. This is effectively like saying the home or default.
 
